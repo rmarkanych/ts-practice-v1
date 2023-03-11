@@ -18,11 +18,11 @@ return (
         <p>{product.title}</p>
         <p className="font-bold">{product.price}</p>
         <button className={btnClasses.join(' ')} type="button" onClick={() => setDetails(prev => !prev)}>
-            {details ? ' Hide Details ' : 'Show Details'}
+        {details ? ' Hide Details ' : 'Show Details'}
         </button>
-       {details && <div>
+        {details && <div>
         <p>{product.description}</p></div>} 
-    <p>Rate: <span className="font-bold">{product.rating.rate}</span></p>
+        <p>Rate: <span className="font-bold">{product?.rating?.rate}</span></p>
     </div>
 )
 }

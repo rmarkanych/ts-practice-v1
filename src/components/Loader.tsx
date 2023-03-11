@@ -1,5 +1,5 @@
 export const Loader = () => {
-    return (<>
+    return (
     <p className="text-center">Loading...</p>
-    </>)
+    )
 }

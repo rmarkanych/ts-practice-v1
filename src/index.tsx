@@ -1,8 +1,10 @@
 import ReactDOM from 'react-dom/client'
-import React from 'react'
-import App from './App'
+import {App} from './App'
+import { ModalState } from './context/ModalContext'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <App />
+  <ModalState>
+    <App />
+  </ModalState>
 )
